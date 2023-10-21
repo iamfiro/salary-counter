@@ -56,10 +56,9 @@ interface IDataModalProps {
     setState: (value: React.SetStateAction<boolean>) => void;
     timerStart: () => void;
     resetTimer: () => void;
-    setTimerStart: (value: React.SetStateAction<boolean>) => void;
 }
 
-export default function DataModal({ setState, timerStart, resetTimer, setTimerStart }: IDataModalProps) {
+export default function DataModal({ setState, timerStart, resetTimer }: IDataModalProps) {
     const [day, setDay] = useState<string>(localStorage.getItem('day') ?? '1');
     const [salary, setSalary] = useState<number>(parseInt(localStorage.getItem('salary') ?? '10000'));
 
@@ -103,7 +102,6 @@ export default function DataModal({ setState, timerStart, resetTimer, setTimerSt
                         }
                         localStorage.setItem('salary', salary?.toString() || '10000');
                         setState(false)
-                        setTimerStart(true)
                         resetTimer()
                         timerStart()
                     }}>타이머 시작하기</button>

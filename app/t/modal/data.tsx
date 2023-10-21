@@ -49,7 +49,6 @@ const options = [
     { value: 29, label: '29일' },
     { value: 30, label: '30일' },
     { value: 31, label: '31일' },
-    { value: 32, label: '32일' },
 ]
 
 interface IDataModalProps {

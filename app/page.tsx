@@ -8,7 +8,7 @@ export default function Home() {
         <div className={style.home}>
             <div className={style.titleContainer}>
                 <h1>직장인 <span style={{ color: '#25c871' }}>동기부여</span> 타이머</h1>
-                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span>
+                <span>일한 시간만큼 월급을 계산해서 표시해 직장인들에게 동기부여를 해 줍니다.</span>
             </div>
             <a href='/t' style={{ textDecoration: 'none' }}>
                 <button className={style.letsStart}>
